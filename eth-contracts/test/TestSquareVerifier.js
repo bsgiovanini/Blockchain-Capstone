@@ -57,17 +57,34 @@ contract("TestSquareVerifier", accounts => {
 
     it("should verify correctly", async () => {
       assert(
-        (await this.contract.verifyTx(
-          proof.A,
-          proof.A_p,
-          proof.B,
-          proof.B_p,
-          proof.C,
-          proof.C_p,
-          proof.H,
-          proof.K,
+        (await this.contract.verifyTx.call(
+          proof.proof.A,
+          proof.proof.A_p,
+          proof.proof.B,
+          proof.proof.B_p,
+          proof.proof.C,
+          proof.proof.C_p,
+          proof.proof.H,
+          proof.proof.K,
           proof.input
         )) == true
+      );
+    });
+
+    it("should verify wrongly", async () => {
+      proof.proof.A = proof.proof.C; //invalidate
+      assert(
+        (await this.contract.verifyTx.call(
+          proof.proof.A,
+          proof.proof.A_p,
+          proof.proof.B,
+          proof.proof.B_p,
+          proof.proof.C,
+          proof.proof.C_p,
+          proof.proof.H,
+          proof.proof.K,
+          proof.input
+        )) == false
       );
     });
   });
