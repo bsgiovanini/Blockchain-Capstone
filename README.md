@@ -1,10 +1,18 @@
 # Udacity Blockchain Capstone
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product.
+This project was developed as final project for Udacity Blockchain Nanodegree Program. The capstone was built upon the knowledge gained in the course in order to build a decentralized housing product.
 
-Verifier : https://rinkeby.etherscan.io/address/0x778445320eb0a2cdd0c35773ee36a57063919af6
+Two smart contracts were developed and deployed in rinkeby network: [Verifier](https://rinkeby.etherscan.io/address/0x778445320eb0a2cdd0c35773ee36a57063919af6) and [SolnSquareVerifier](https://rinkeby.etherscan.io/address/0xb9a0d92621C8BaF464cB8782ffA407229361AE5d)
 
-contract ABI:
+A token was also generated named [bsgToken](https://rinkeby.etherscan.io/token/0xb9a0d92621c8baf464cb8782ffa407229361ae5d)
+
+Finally, the [Opensea storefront](https://rinkeby.opensea.io/storefront/bsgtoken-3) containing 10 tokens minted in [myEtherWallet](myetherwallet.com) website.
+
+## ABIs
+
+Following are ABI's of the contracts deployed
+
+Verifier:
 
 ```
 [
@@ -74,9 +82,7 @@ contract ABI:
   ]
 ```
 
-SolnSquareVerifier: https://rinkeby.etherscan.io/address/0xb9a0d92621C8BaF464cB8782ffA407229361AE5d
-
-Contract ABI:
+SolnSquareVerifier:
 
 ```
 [
@@ -822,11 +828,6 @@ Contract ABI:
     }
   ]
 ```
-
-Token name: bsgToken (https://rinkeby.etherscan.io/token/0xb9a0d92621c8baf464cb8782ffa407229361ae5d)
-Token symbol: BSG
-
-OpenSea StoreFront: https://rinkeby.opensea.io/storefront/bsgtoken-3
 
 # Project Resources
 
