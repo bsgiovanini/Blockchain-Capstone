@@ -5,7 +5,8 @@ The capstone will build upon the knowledge you have gained in the course in orde
 Verifier : https://rinkeby.etherscan.io/address/0x778445320eb0a2cdd0c35773ee36a57063919af6
 
 contract ABI:
-'''
+
+```
 [
     {
       "anonymous": false,
@@ -71,12 +72,13 @@ contract ABI:
       "type": "function"
     }
   ]
-'''
+```
 
 SolnSquareVerifier: https://rinkeby.etherscan.io/address/0xb9a0d92621C8BaF464cB8782ffA407229361AE5d
 
 Contract ABI:
-'''
+
+```
 [
     {
       "constant": true,
@@ -819,8 +821,7 @@ Contract ABI:
       "type": "function"
     }
   ]
-'''
-
+```
 
 Token name: bsgToken (https://rinkeby.etherscan.io/token/0xb9a0d92621c8baf464cb8782ffa407229361ae5d)
 Token symbol: BSG
