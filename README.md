@@ -829,6 +829,16 @@ SolnSquareVerifier:
   ]
 ```
 
+## Install
+
+To install, download or clone the repo, then:
+`npm install`
+
+To test the contracts
+`cd eth-contracts`
+`truffle develop`
+`test`
+
 # Project Resources
 
 - [Remix - Solidity IDE](https://remix.ethereum.org/)
